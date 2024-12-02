@@ -1,16 +1,17 @@
+import Certificates from "@/components/certificates";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Projects from "@/components/projects";
-import TechStack from "@/components/tech-stack";
-import Image from "next/image";
+import Skills from "@/components/skills";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-black">
+    <main className="min-h-screen bg-background">
       <Header />
       <Hero />
-      <TechStack />
+      <Skills />
       <Projects />
+      <Certificates />
     </main>
   );
 }
