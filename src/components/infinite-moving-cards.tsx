@@ -91,7 +91,7 @@ export const InfiniteMovingCards = ({
             src={item.iconPath}
             width={0}
             height={64}
-            alt="Icon"
+            alt={item.name}
             style={{ height: "64px", width: "auto", objectFit: "contain" }}
             unoptimized={true}
           />

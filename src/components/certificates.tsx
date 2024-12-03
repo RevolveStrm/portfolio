@@ -5,7 +5,7 @@ import { Separator } from "./ui/separator";
 
 export default function Certificates() {
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-8" id="certificates">
+    <section className="py-4 lg:py-12 px-4 sm:px-6 lg:px-8" id="certificates">
       <div className="container mx-auto">
         <motion.h2
           className="text-3xl font-semibold mb-8 text-left space-y-4"

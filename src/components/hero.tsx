@@ -1,11 +1,10 @@
 "use client";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Separator } from "./ui/separator";
 
 export default function Hero() {
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-8">
+    <section className="py-12 px-4 sm:px-6 lg:px-8" id="about">
       <div className="container mx-auto">
         <motion.h2
           className="text-3xl font-semibold mb-8 text-left space-y-4"
@@ -24,8 +23,10 @@ export default function Hero() {
           <p className="text-gray-600 mb-6">
             I am a developer with a passion for creating intuitive and efficient
             digital solutions. I value clean code, collaboration, and continuous
-            growth.
+            growth. Partner with me to bring your ideas to life through
+            innovation and technical expertise.
           </p>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
             <div>
               <h3 className="text-xl font-semibold mb-2 text-black">
@@ -89,6 +90,28 @@ export default function Hero() {
                 cultures.
               </p>
             </div>
+          </div>
+
+          <div className="mt-10 text-left">
+            <h3 className="text-xl font-bold mb-2 text-black">
+              Why Work With Me?
+            </h3>
+            <p className="text-gray-600">
+              Partnering with me means gaining a dedicated, solution-oriented
+              developer who values your vision and translates it into impactful
+              digital experiences. Let’s collaborate to create something
+              extraordinary.
+            </p>
+            <p className="text-gray-600 mt-4">
+              Ready to bring your project to the next level?{" "}
+              <a
+                href={`mailto:${process.env.NEXT_PUBLIC_EMAIL as string}`}
+                className="text-blue-600 font-semibold underline"
+              >
+                Get in touch
+              </a>
+              !
+            </p>
           </div>
         </motion.div>
       </div>

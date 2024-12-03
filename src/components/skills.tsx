@@ -1,13 +1,12 @@
 "use client";
-import { Card, CardContent } from "@/components/ui/card";
 import { technologies } from "@/constants/technologies";
 import { motion } from "framer-motion";
 import { InfiniteMovingCards } from "./infinite-moving-cards";
 import { Separator } from "./ui/separator";
 
-export default function TechStack() {
+export default function Skills() {
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-8" id="skills">
+    <section className="py-4 lg:py-12 px-4 sm:px-6 lg:px-8" id="skills">
       <div className="container mx-auto">
         <motion.h2
           className="text-3xl font-semibold mb-8 text-left space-y-4"
