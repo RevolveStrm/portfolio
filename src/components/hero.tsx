@@ -32,11 +32,10 @@ export default function Hero() {
               <h3 className="text-xl font-semibold mb-2 text-black">
                 Experience
               </h3>
-              <p className="text-gray-600">5+ years in web development</p>
+              <p className="text-gray-600">4+ years in web development</p>
               <p className="text-gray-600">
                 Delivered scalable, user-friendly applications for startups and
-                enterprises across industries such as e-commerce, SaaS, and
-                fintech.
+                enterprises across various industries.
               </p>
               <p className="text-gray-600">
                 Specialized in full-stack development with modern JavaScript

@@ -51,6 +51,10 @@ export enum TechnologyName {
 }
 
 export const technologies = [
+	{
+		name: TechnologyName.EXPRESS_JS,
+		iconPath: "/assets/images/tech/express.png",
+	},
 	{ name: TechnologyName.LINUX, iconPath: "/assets/images/tech/linux.png" },
 	{ name: TechnologyName.AWS, iconPath: "/assets/images/tech/aws.png" },
 	{ name: TechnologyName.AWS_S3, iconPath: "/assets/images/tech/awss3.png" },

@@ -44,13 +44,13 @@ export function ExpandableCards({ items }: Props) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/20 min-h-screen w-full z-10"
+            className="fixed inset-0 bg-black/50 w-full z-30 hidden md:block"
           />
         )}
       </AnimatePresence>
       <AnimatePresence>
         {active && typeof active === "object" ? (
-          <div className="fixed inset-0 min-h-screen grid place-items-center z-[100]">
+          <div className="fixed inset-0 grid place-items-center z-[100]">
             <motion.button
               key={`button-${active.title}-${id}`}
               layout
@@ -74,23 +74,22 @@ export function ExpandableCards({ items }: Props) {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-auto lg:overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
-                  priority
-                  width={200}
-                  height={200}
+                  width={400}
+                  height={400}
                   src={active?.innerSrc ? active?.innerSrc : active.src}
                   alt={active.title}
-                  className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-contain"
-                  unoptimized={true}
+                  className="h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-contain w-full"
+                  unoptimized
                 />
               </motion.div>
 
-              <div>
-                <div className="flex justify-between items-start p-4">
-                  <div className="">
+              <div className="px-4 space-y-4 lg:mt-4">
+                <div className="flex justify-between items-start">
+                  <div className="space-y-2">
                     <motion.h3
                       layoutId={`title-${active.title}-${id}`}
                       className="font-bold text-neutral-700 dark:text-neutral-200"
@@ -111,7 +110,7 @@ export function ExpandableCards({ items }: Props) {
                     </motion.p>
                   </div>
                 </div>
-                <div className="pt-4 relative px-4">
+                <div className="relative">
                   <motion.div
                     layout
                     initial={{ opacity: 0 }}
@@ -142,10 +141,10 @@ export function ExpandableCards({ items }: Props) {
                 <Image
                   width={100}
                   height={100}
+                  quality={50}
                   src={item.src}
                   alt={item.title}
                   className="h-40 w-40 md:h-14 md:w-14 rounded-lg object-cover"
-                  unoptimized={true}
                 />
               </motion.div>
               <div className="">

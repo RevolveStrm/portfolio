@@ -1,3 +1,4 @@
+import { BackScroll } from "@/components/back-scroll";
 import Certificates from "@/components/certificates";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
@@ -12,6 +13,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Certificates />
+      <BackScroll />
     </main>
   );
 }

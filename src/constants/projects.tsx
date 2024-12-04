@@ -93,6 +93,39 @@ export const projects: Projects = [
         ],
       },
       {
+        title: "Cloudrage",
+        description:
+          "A powerful cloud storage application for seamless file management and secure saving.",
+        fullDescription:
+          "Cloudrage is a robust and modern cloud storage solution designed to simplify file management. It enables users to securely store, organize, and access their files anytime, anywhere. The app offers a clean and intuitive interface, ensuring an efficient user experience. Featuring a tech stack optimized for performance, scalability, and security, Cloudrage is ideal for both personal and professional use.",
+        src: "/assets/images/projects/cloudrage.png",
+        technologies: [
+          TechnologyName.NEXTJS,
+          TechnologyName.NESTJS,
+          TechnologyName.TYPESCRIPT,
+          TechnologyName.TAILWIND_CSS,
+          TechnologyName.PRISMA,
+          TechnologyName.POSTGRESQL,
+          TechnologyName.JWT,
+          TechnologyName.NODE_JS,
+          TechnologyName.SQL,
+          TechnologyName.ZUSTAND,
+        ],
+      },
+      {
+        title: "React Pizza",
+        description: "A modern SPA for ordering delicious pizzas online.",
+        fullDescription:
+          "React Pizza is a single-page application designed for seamless online pizza ordering. Users can explore a customizable menu, select toppings, and place orders effortlessly. The project features a sleek design, responsive interface, and fast navigation without page reloads, ensuring a smooth and enjoyable user experience. Built with a modern tech stack, it offers reliable performance and scalability.",
+        src: "/assets/images/projects/react-pizza.png",
+        technologies: [
+          TechnologyName.REACT,
+          TechnologyName.TYPESCRIPT,
+          TechnologyName.SASS,
+          TechnologyName.NODE_JS,
+        ],
+      },
+      {
         title: "RememberThat",
         description: "A responsive landing page for a task management app.",
         fullDescription:
@@ -168,13 +201,6 @@ export const projects: Projects = [
           TechnologyName.NODE_JS,
         ],
       },
-    ],
-  },
-  {
-    category: "Freelance Projects",
-    description:
-      "A diverse collection of client projects demonstrating flexibility and problem-solving expertise.",
-    items: [
       {
         title: "Bitskins Websocket Parser",
         description:
