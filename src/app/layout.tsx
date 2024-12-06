@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "../styles/globals.css";
+import GTag from "@/components/g-tag";
 import { Providers } from "@/components/providers";
 
 const geistSans = localFont({
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <GTag />
         <Providers>{children}</Providers>
       </body>
     </html>
